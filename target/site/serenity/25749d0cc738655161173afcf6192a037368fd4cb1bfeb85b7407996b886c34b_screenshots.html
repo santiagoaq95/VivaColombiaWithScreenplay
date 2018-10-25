@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">Serenity With ScreenPlay - Project Newtours</span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="da496b2e8de6701202341ce931e1e8a16b703d8df5b610b9905b9082cd74ec9d.html">Viva Colombia Find Flight Functionality Feature</a></span>
+                > <span class="truncate-60"><a
+                    href="25749d0cc738655161173afcf6192a037368fd4cb1bfeb85b7407996b886c34b.html">Find Flight on Viva Colombia </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 25-10-2018 17:20</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Viva Colombia Find Flight Functionality Feature </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                In order to ensure Find Flight Functionality works,<br />
+I want to run the cucumber test to verify it is working
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="095fb70a5155b4b01be72b93f1b4c51cab27094796115f0e543dc2649da60779.html">Smoketest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="04d17093c0f0800e49c67267df02a392cc77aa108dd3d4560e74eb3dc0366622.html">Findflight
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Find Flight on Viva Colombia
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given he selects one trip<br>When he selects departure city<br><table class='embedded'><thead><th>cityDeparture</th></thead><tbody><tr><td>&lt;cityDeparture&gt;</td></tr></tbody></table><br>When he selects arrival city<br><table class='embedded'><thead><th>cityArrival</th></thead><tbody><tr><td>&lt;cityArrival&gt;</td></tr></tbody></table><br>And he picks &lt;adults&gt; Adults, &lt;children&gt; Children and &lt;infants&gt; infants<br>When he selects the depart date<br><table class='embedded'><thead><th>day</th><th>month</th><th>year</th></thead><tbody><tr><td>10</td><td>11</td><td>2018</td></tr></tbody></table><br>And he clicks on button find your flight<br>When he choose a flight "4"<br>Then he must to watch his flight "&lt;cityDeparture&gt;" to "&lt;cityArrival&gt;" on booking basket</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="2b49b747a905a4e9a8c46aa9d37af198b27e86d61508747fff563758d623a949.png" title="Example #1: {adults=2, children=3, infants=1, cityDeparture=Bogota, cityArrival=Cartagena}" width="1349"/>
+                <img src="0815224391cddbcef5571a7dda895cf32041c596476136c7ee4a9e46c79909db.png" title="Given lukas open viva colombia homepage" width="1366"/>
+                <img src="a9f7594ff554f01276e43005025d7acfa74ddc3e377d99408aeb9bb472e45aa0.png" title="Given lukas open viva colombia homepage" width="1349"/>
+                <img src="0815224391cddbcef5571a7dda895cf32041c596476136c7ee4a9e46c79909db.png" title="Lukas Opens the browser on Viva Colombia Homepage " width="1366"/>
+                <img src="a9f7594ff554f01276e43005025d7acfa74ddc3e377d99408aeb9bb472e45aa0.png" title="Lukas Opens the browser on Viva Colombia Homepage " width="1349"/>
+                <img src="0815224391cddbcef5571a7dda895cf32041c596476136c7ee4a9e46c79909db.png" title="Lukas opens the Vivaair home page" width="1366"/>
+                <img src="a9f7594ff554f01276e43005025d7acfa74ddc3e377d99408aeb9bb472e45aa0.png" title="Lukas opens the Vivaair home page" width="1349"/>
+                <img src="a9f7594ff554f01276e43005025d7acfa74ddc3e377d99408aeb9bb472e45aa0.png" title="Then page should be (1)" width="1349"/>
+                <img src="a9f7594ff554f01276e43005025d7acfa74ddc3e377d99408aeb9bb472e45aa0.png" title="Given he selects one trip" width="1349"/>
+                <img src="c7a491832a9fb1f525594e13d0bad013f92aec6e204ec8711485ea15656e4f40.png" title="Given he selects one trip" width="1349"/>
+                <img src="a9f7594ff554f01276e43005025d7acfa74ddc3e377d99408aeb9bb472e45aa0.png" title="Lukas clicks on Homepage button message down" width="1349"/>
+                <img src="44fc759ae5df2ccd05bb5c09a3e20ffe7cfbefb7a4a9ed6bb45e615fde39c159.png" title="Lukas clicks on Homepage button message down" width="1349"/>
+                <img src="2d5edbdd651037084323f52fda9dab0027a5c55ac9cef65e2f4aecaea79b7fda.png" title="Lukas clicks on Homepage button message down" width="1349"/>
+                <img src="1b7cf4fd2377644111284f754cb931b08fd18438bd39a6379fcc84b3f27d6413.png" title="Lukas clicks on Homepage radio button One Trip" width="1349"/>
+                <img src="c7a491832a9fb1f525594e13d0bad013f92aec6e204ec8711485ea15656e4f40.png" title="Lukas clicks on Homepage radio button One Trip" width="1349"/>
+                <img src="c7a491832a9fb1f525594e13d0bad013f92aec6e204ec8711485ea15656e4f40.png" title="When he selects departure city
+| cityDeparture |
+| Bogota |" width="1349"/>
+                <img src="330684dc19e48225bcc53687dfadef4ca47ce49a9ef7397f65168f0c4d95f7ae.png" title="When he selects departure city
+| cityDeparture |
+| Bogota |" width="1349"/>
+                <img src="c7a491832a9fb1f525594e13d0bad013f92aec6e204ec8711485ea15656e4f40.png" title="Lukas clicks on Homepage click city departure" width="1349"/>
+                <img src="ba8de56f567df8c1095c649a1add54ff1c27a9a31c4a97e82aa3bea3a1925e67.png" title="Lukas clicks on Homepage click city departure" width="1349"/>
+                <img src="4b5c904a05cf3ae937c0e491e901d1f945b79eb870af8c056d0aa68e92f96c1b.png" title="Lukas enters 'Bogota' into Homepage select city departure" width="1349"/>
+                <img src="3120c27637a558e3b66358446827f56146fb57d7b5a5d84ee3d6850eb8029300.png" title="Lukas enters 'Bogota' into Homepage select city departure" width="1349"/>
+                <img src="cfcd6475ad380c97aa16cf93fab2f79ccd8c72f83ddff3bff5bef1e130b68dad.png" title="Lukas enters 'Bogota' into Homepage select city departure" width="1349"/>
+                <img src="330684dc19e48225bcc53687dfadef4ca47ce49a9ef7397f65168f0c4d95f7ae.png" title="When he selects arrival city
+| cityArrival |
+| Cartagena |" width="1349"/>
+                <img src="6bea1077a353a8cfd0d29c8067cac800bed356c9327fb5f1bcaead6db7cb94cd.png" title="When he selects arrival city
+| cityArrival |
+| Cartagena |" width="1349"/>
+                <img src="330684dc19e48225bcc53687dfadef4ca47ce49a9ef7397f65168f0c4d95f7ae.png" title="Lukas clicks on Homepage click city departure " width="1349"/>
+                <img src="d5c5f72df61f12d8e87eca058ab2482070f1a42176e0a2d4458c99e7672fa507.png" title="Lukas clicks on Homepage click city departure " width="1349"/>
+                <img src="05bc9d495c00c5f5a7a9393d5949dad841f014466998a5e308640cc99186f2b5.png" title="Lukas enters 'Cartagena' into Homepage select city departure " width="1349"/>
+                <img src="e18ae64e5a21f786cbd252884d1ce2a4d9ca98c8bfe773a8bca71d5b3e380523.png" title="Lukas enters 'Cartagena' into Homepage select city departure " width="1349"/>
+                <img src="4e93ef14d7e4355c92e25ea6a8e4478d9f47cacc358963d7c3b1893133c75da0.png" title="Lukas enters 'Cartagena' into Homepage select city departure " width="1349"/>
+                <img src="6bea1077a353a8cfd0d29c8067cac800bed356c9327fb5f1bcaead6db7cb94cd.png" title="And he picks 2 Adults, 3 Children and 1 infants" width="1349"/>
+                <img src="6ec914fadf44ad3dd0867c053bac4e4f53da16739163e0b81cfb32f7dd8322b0.png" title="And he picks 2 Adults, 3 Children and 1 infants" width="1349"/>
+                <img src="fbc96bf4b82c291c10e00a34c54fae85504d1f92e133de657f2d9b7b6f37e83b.png" title="Lukas clicks on Homepage click number of adults" width="1349"/>
+                <img src="3c58d9084241868a3d0f7dba130e00709ef5319135a3c10c2ce4a3385558a67f.png" title="Lukas clicks on Homepage click number of adults" width="1349"/>
+                <img src="1c003c9d8f19e0c9c839971175f5326af9b51e2fc0d8694f93bbea273cec4769.png" title="Lukas clicks on Homepage click number of adults" width="1349"/>
+                <img src="dcca0894d4d004275cf9943fdd6f703f4d7fbff9b5c8864e735079cd8335aa5b.png" title="Lukas enters '2' into Homepage select number of adults" width="1349"/>
+                <img src="159ae4400fde49b6c08ea2a4cdb5126dbe1c6523fdd5bfb61bfed55d691f465e.png" title="Lukas enters '2' into Homepage select number of adults" width="1349"/>
+                <img src="1c31cea33cc69245b24437a25023036ad5e113acc16306325b1c05ab3fcd7db9.png" title="Lukas enters '2' into Homepage select number of adults" width="1349"/>
+                <img src="858922b2f7d0e769682f5954bd62f196db8af3cc142487cbb0b44a2c0b14cc88.png" title="Lukas clicks on Homepage click number of children" width="1349"/>
+                <img src="2898fc4fb4e1c5d5e0ba75cab9453e923857442601d7691cb7c30ed22395f043.png" title="Lukas clicks on Homepage click number of children" width="1349"/>
+                <img src="60996c7501496029a49ed0a806c16cf278b9c56f7c5afb5bad370cfce85d3ed0.png" title="Lukas clicks on Homepage click number of children" width="1349"/>
+                <img src="8a3dd015b81d2718ef6c6ed92d45ca0706b1236a493e21f1a1684d8686de5e61.png" title="Lukas enters '3' into Homepage select number of children" width="1349"/>
+                <img src="4149ab3a51a90de77389057911d9a3c736ae007ae6829b483683a44fdcf33bfc.png" title="Lukas enters '3' into Homepage select number of children" width="1349"/>
+                <img src="687289d54aeb9f9ed40718d38583d516c32b1a0a748798ff810e5f57cd4d66fb.png" title="Lukas enters '3' into Homepage select number of children" width="1349"/>
+                <img src="6848cdd2a28029be56ed665c5527953a0b4053d9417fba520779923c3ff4a85c.png" title="Lukas clicks on Homepage click number of infants" width="1349"/>
+                <img src="252f0be17ed873acd291b7ce7cf95c3a4195fe4f9af0e2500507940a2bbc5a33.png" title="Lukas clicks on Homepage click number of infants" width="1349"/>
+                <img src="bc21572babd1ebdfb4bff78be9935b7d3d283117436c72c16536ca94a431233b.png" title="Lukas clicks on Homepage click number of infants" width="1349"/>
+                <img src="a639bc1324854ecb6188d0de45f6d07260796cdb899599e57c560b66e4b0e79b.png" title="Lukas enters '1' into Homepage select number of infants" width="1349"/>
+                <img src="5312063699f9e77621a578fbbce09c43b72d32a38c84ebc6de83cc94da3cc8a6.png" title="Lukas enters '1' into Homepage select number of infants" width="1349"/>
+                <img src="c463f97fbc78a3190e352485c4b1380eb4692cadfdc4f6b397361dca55ab8c2a.png" title="Lukas enters '1' into Homepage select number of infants" width="1349"/>
+                <img src="a9c8d095f444f0675bf6883207312ddf79297c379611c0f666163dbdd853da8f.png" title="When he selects the depart date
+| day | month | year |
+| 10 | 11 | 2018 |" width="1349"/>
+                <img src="b9e1a338bc4de4788e020fa6a109c80694aca19349a56f91496b665c0886a355.png" title="When he selects the depart date
+| day | month | year |
+| 10 | 11 | 2018 |" width="1349"/>
+                <img src="5e0637c3d0ed313bf64ab859a333cbd0e05a8f5f37466f97dda9041b4aa88ef1.png" title="Lukas clicks on Homepage select depart date" width="1349"/>
+                <img src="0f1bd8c744fc0e3553d3528ce2dd6335c5449f2482389b3e625035db460786c4.png" title="Lukas clicks on Homepage select depart date" width="1349"/>
+                <img src="d4f02dcca575e5b673f0b5bb5dab7286fe173ea8ada1b611df2431e3da11df2d.png" title="Lukas clicks on Homepage select depart date" width="1349"/>
+                <img src="2a13c157f4f87f383c802e6431b06b9fd158450e5112e7f0d0fc394b2bf0d88d.png" title="Lukas types 'DELETE' in Homepage select depart date" width="1349"/>
+                <img src="d4f02dcca575e5b673f0b5bb5dab7286fe173ea8ada1b611df2431e3da11df2d.png" title="Lukas enters '10/11/2018' into Homepage select depart date" width="1349"/>
+                <img src="06b2449035d6fc59ccf6872ff52aadf489cb9807e0d55029d37a48982c520f53.png" title="Lukas enters '10/11/2018' into Homepage select depart date" width="1349"/>
+                <img src="06b2449035d6fc59ccf6872ff52aadf489cb9807e0d55029d37a48982c520f53.png" title="Lukas clicks on Homepage click number of adults" width="1349"/>
+                <img src="d08a60f369a23a09818f56e5848599c1913e3c8c517aa9b2ab138a17e7431fcc.png" title="Lukas clicks on Homepage click number of adults" width="1349"/>
+                <img src="089bebbd3eb80d39cf47e93963ade8228b6b3de204621b03df005c0536add68d.png" title="Lukas clicks on Homepage click number of adults" width="1349"/>
+                <img src="e8491eaa648af8ce378c7c1d8e6d0f9fbe1998c56acc7b5cd60960c08da37e0d.png" title="Lukas types 'ENTER' in Homepage select number of adults" width="1349"/>
+                <img src="b9e1a338bc4de4788e020fa6a109c80694aca19349a56f91496b665c0886a355.png" title="Lukas types 'ENTER' in Homepage select number of adults" width="1349"/>
+                <img src="b9e1a338bc4de4788e020fa6a109c80694aca19349a56f91496b665c0886a355.png" title="And he clicks on button find your flight" width="1349"/>
+                <img src="79961e7f8192b84fdc96a4dfcb5847098fe17b3a26578394f87995d1e957e166.png" title="And he clicks on button find your flight" width="1349"/>
+                <img src="b9e1a338bc4de4788e020fa6a109c80694aca19349a56f91496b665c0886a355.png" title="Lukas clicks on Homepage button find flight" width="1349"/>
+                <img src="84f5125a27f91f8d86d13dab95f30bc8267ea6e5c9161b17d0651d2a15371be2.png" title="Lukas clicks on Homepage button find flight" width="1349"/>
+                <img src="cc1213fac8faeef93961afef26d421a1466549c98e2d87a9797f8de49964cfe0.png" title="Lukas clicks on Homepage button find flight" width="1349"/>
+                <img src="e74d5d20d0f2c94c389f32f96284da8ecd4bcb67f15a3627c613021411b1b738.png" title="When he choose a flight &quot;4&quot;" width="1349"/>
+                <img src="60734b6f2588614f46d035d84fe6477f354e679fd96dc8b2a05d954abb82386a.png" title="When he choose a flight &quot;4&quot;" width="1349"/>
+                <img src="b12d22f6cb8264f0204893dafc8da43e5e7aad87ee49bacd03b12ecf790e67a0.png" title="Then options should be (1)" width="1349"/>
+                <img src="98eb4881941f940cd57470978dfa25453d31cf72df495ac328b02c0d407040da.png" title="Then options should be (1)" width="1349"/>
+                <img src="a8aba13127349f8e2dd333c7d900e7e664fc06ea33fc96969f00a9000453b32a.png" title="Lukas clicks on FlightPage list of flights" width="1349"/>
+                <img src="98e428cd1bcaeda1d967ce660bd86b86716e415665157a3b16e62743702f9437.png" title="Lukas clicks on FlightPage list of flights" width="1349"/>
+                <img src="a89be46d0b9c989d5969a1926301d7d7ee11a8b003dea6feef3da1632652fcf8.png" title="Lukas clicks on FlightPage list of flights" width="1349"/>
+                <img src="98878cabdeb5426a85bccce87227ce17d2bff95f017875c74b340023a17382bb.png" title="Lukas clicks on //span[.='Agree']" width="1349"/>
+                <img src="28dc580bfa445819d9f616d149d543b0228000e4b9779686f172bc55ac4bc808.png" title="Lukas clicks on //span[.='Agree']" width="1349"/>
+                <img src="efa938c0965ae0e8a762ba280fb446956beafa9a29b40739923bcd73e785fed3.png" title="Lukas clicks on //span[.='Agree']" width="1349"/>
+                <img src="2b49b747a905a4e9a8c46aa9d37af198b27e86d61508747fff563758d623a949.png" title="Then he must to watch his flight &quot;Bogota&quot; to &quot;Cartagena&quot; on booking basket" width="1349"/>
+                <img src="2b49b747a905a4e9a8c46aa9d37af198b27e86d61508747fff563758d623a949.png" title="Then see should be a string containing 'Bogota - Cartagena': <span class='success-color'>SUCCESS</span>" width="1349"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.9</span>
+</div>
+</body>
+</html>
