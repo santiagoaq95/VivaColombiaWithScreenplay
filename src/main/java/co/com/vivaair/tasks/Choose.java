@@ -12,6 +12,10 @@ import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 import net.serenitybdd.screenplay.actions.Scroll;
 
+/**
+ * @author Santiagoaq95
+ *
+ */
 public class Choose implements  Task{
 
 	private Passenger passengers= new Passenger();
@@ -21,6 +25,12 @@ public class Choose implements  Task{
 		passengers.setChildren(children);
 		passengers.setInfants(infants);
 	}
+	/**
+	 * Task del actor en donde se hace un scroll al botón para visualizar mejor la pagina 
+	 * en está se introduccirá los datos de cuantos adultos, niños y bebes irán en el vuelo 
+	 * 
+	 */
+	
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Scroll.to(VivaairHomePage.HOMEPAGE_BUTTON_FIND_FLIGHT));

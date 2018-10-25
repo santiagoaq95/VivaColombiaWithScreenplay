@@ -9,7 +9,7 @@ public class See implements Question<String> {
 
 	@Override
 	public String answeredBy(Actor actor) {
-		
+		//Question para verificar si está el vuelo en el booking basket 
 		return Text.of(VivaairFlightPage.FLIGHTPAGE_BOOKING_BASKET).viewedBy(actor).asString();
 	}
 	public static See flights() {

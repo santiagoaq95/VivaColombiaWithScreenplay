@@ -8,21 +8,27 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Open;
 import net.thucydides.core.annotations.Step;
 
-public class OpenTheBrowser implements Task{
+public class OpenTheBrowser implements Task {
 
 	private PageObject page;
-
 
 	public OpenTheBrowser(PageObject page) {
 		this.setPage(page);
 	}
 
+	/**
+	 * Tarea con la que se abre la pagina en un URL definida en clase que hereda de
+	 * PageObject, mediante DefaulURL
+	 * 
+	 * 
+	 */
+
 	@Override
 	@Step("{0} Opens the browser on Viva Colombia Homepage ")
 	public <T extends Actor> void performAs(T actor) {
+
 		actor.attemptsTo(Open.browserOn(this.page));
-		
-		
+
 	}
 
 	public static OpenTheBrowser on(PageObject page) {

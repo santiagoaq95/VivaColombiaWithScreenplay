@@ -24,6 +24,10 @@ public class Pick implements Task{
 		date.setMonth(month);
 		date.setDay(day);
 	}
+	
+	/**
+	 * Tareas del actor en el cual se selecciona la fecha de partida
+	 */
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Scroll.to(VivaairHomePage.HOMEPAGE_DEPART_DATE));

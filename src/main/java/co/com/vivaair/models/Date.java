@@ -1,5 +1,6 @@
 package co.com.vivaair.models;
 
+//Model para la fecha
 public class Date {
 	private String day;
 	private String month;

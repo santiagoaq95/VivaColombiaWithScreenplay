@@ -10,7 +10,7 @@ public class Page implements Question<Integer> {
 
 	@Override
 	public Integer answeredBy(Actor actor) {
-
+		//Question para validar si hay elemento en la pagina 
 		if (Text.of(VivaairHomePage.HOMEPAGE_ONETRIP).viewedBy(actor).asList().size() > 0) {
 			return 1;
 		} else {

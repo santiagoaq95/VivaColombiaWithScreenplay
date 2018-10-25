@@ -16,20 +16,25 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
 
-public class Select implements Task{
-	private City city=new City();
-	
+public class Select implements Task {
+	private City city = new City();
+
 	public Select(String city) {
 		this.city.setName(city);
 	}
+
+	/**
+	 * Las tareas de este actor están definidas en dos clases task para permitir
+	 * visualizar en el StepDefinitions un mensaje con claridad para cualquier
+	 * usuario
+	 */
 	@Override
 	public <T extends Actor> void performAs(T actor) {
-		
+
 		actor.attemptsTo(Click.on(VivaairHomePage.HOMEPAGE_CITY_CLICK_DEPARTURE));
-		actor.attemptsTo(Enter.theValue(this.city.getName()).into(VivaairHomePage.HOMEPAGE_CITY_DEPARTURE).thenHit(Keys.ENTER));
-		
-		
-		
+		actor.attemptsTo(
+				Enter.theValue(this.city.getName()).into(VivaairHomePage.HOMEPAGE_CITY_DEPARTURE).thenHit(Keys.ENTER));
+
 	}
 
 	public static Select departure(DataTable city) {
@@ -37,11 +42,11 @@ public class Select implements Task{
 		String cityDeparture = params.get(0).get("cityDeparture");
 		return instrumented(Select.class, cityDeparture);
 	}
+
 	public static Performable arrival(DataTable city2) {
 		List<Map<String, String>> params = city2.asMaps(String.class, String.class);
 		String cityDeparture = params.get(0).get("cityArrival");
 		return instrumented(SelectArrival.class, cityDeparture);
 	}
-	
 
 }

@@ -1,5 +1,13 @@
 package co.com.vivaair.models;
 
+
+
+/**
+ * @author Santiagoaq95
+ *
+ */
+
+//Model de numero de pasajeros 
 public class Passenger {
 	private int adults;
 	private int children;

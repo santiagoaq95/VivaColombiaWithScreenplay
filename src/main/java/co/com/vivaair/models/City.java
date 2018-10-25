@@ -1,5 +1,6 @@
 package co.com.vivaair.models;
 
+//Model de ciudad
 public class City {
 	private String name;
 

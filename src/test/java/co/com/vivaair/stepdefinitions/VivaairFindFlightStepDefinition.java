@@ -30,6 +30,12 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.ClearCookiesPolicy;
 import net.thucydides.core.annotations.Managed;
 
+/**
+ * @author Santiagoaq95
+ *
+ *
+ *         Step Definitions de como buscar un vuelo en Viva Colombia
+ */
 public class VivaairFindFlightStepDefinition {
 
 	@Managed(driver = "firefox", clearCookies = ClearCookiesPolicy.BeforeEachTest)
@@ -86,7 +92,8 @@ public class VivaairFindFlightStepDefinition {
 
 	@When("^he choose a flight \"([^\"]*)\"$")
 	public void heChooseAFlight(String flight) {
-		lukas.should(seeThat(Options.isVisible(flight),is(equalTo(1))).orComplainWith(FligthException.class,FligthException.MESSAGE_FLIGTH_NOT_FOUND));
+		lukas.should(seeThat(Options.isVisible(flight), is(equalTo(1))).orComplainWith(FligthException.class,
+				FligthException.MESSAGE_FLIGTH_NOT_FOUND));
 		lukas.attemptsTo(SelectFlight.inList(flight));
 	}
 

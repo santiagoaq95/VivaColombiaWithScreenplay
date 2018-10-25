@@ -9,6 +9,9 @@ import net.serenitybdd.screenplay.actions.Click;
 
 public class Do implements Task{
 
+	/**
+	 * Tarea del actor en la cual se hace click en el botón para buscar los vuelos 
+	 */
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Click.on(VivaairHomePage.HOMEPAGE_BUTTON_FIND_FLIGHT));

@@ -14,7 +14,7 @@ public class Options implements Question<Integer> {
 
 	@Override
 	public Integer answeredBy(Actor actor) {
-		
+		//Metodo para retornar si hay un vuelo 
 		return Text.of(VivaairFlightPage.FLIGHTPAGE_LIST_FLIGHTS.of(optionFlight)).viewedBy(actor).asList().size();
 	}
 
