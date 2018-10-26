@@ -45,6 +45,7 @@ public class VivaairFindFlightStepDefinition {
 
 	private VivaairHomePage vivaHomepage = new VivaairHomePage();
 
+	//Preparación del driver que usará el actor 
 	@Before
 	public void setUp() {
 

@@ -14,6 +14,10 @@ public class SelectFlight implements Task{
 	public SelectFlight(String fligth) {
 		this.flight=fligth;
 	}
+	
+	/**
+	 * Método seleccionar la lista de vuelos y espera para dar click 
+	 */
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 			
@@ -23,7 +27,7 @@ public class SelectFlight implements Task{
 			try {
 				Thread.sleep(6000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			actor.attemptsTo(Click.on("//span[.='Agree']"));

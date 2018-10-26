@@ -16,7 +16,7 @@ public class SelectArrival implements Task {
 	public SelectArrival(String city) {
 		this.city.setName(city);
 	}
-
+	//Método de que el actor entre la ciudad del destino
 	@Override
 	public <T extends Actor> void performAs(T actor) {
 		actor.attemptsTo(Click.on(VivaairHomePage.HOMEPAGE_CITY_CLICK_ARRIVAL));
